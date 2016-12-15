@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Viktoriya Const" />
+	<meta name="copyright" content="V.Const" />
+	<meta name="description" content="ВИОП. Всероссийский информационно-образовательный портал. Здесь собрана вся информация о российских учебных заведениях разных типов и направлений." />
+	<meta name="keywords" content="Всероссийский, Информационный, Образовательный, Образование, Портал, Учебное заведение, ВУЗ, Академия, Институт, Университет, Техникум, ПТУ, Колледж, Лицей, Школа, Детский сад, Гимназия, Курсы, Информация, Расписание, Отзывы, Учащиеся, Преподаватели, Школьное образование, Дополнительное образование, Автошкола, Школа искусств, Музыкальная школа, Секции, Спорт, Высшее образование, Профессиональное образование, Обязательное образование, Дошкольное образование, Школа-интернат" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>Всероссийский информационно-образовательный портал</title>
+
+	<link href="css/libs.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src = "https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src = "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<header class="row siteHeader">
+			<div class="col-xs-12">
+				<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" class="siteHeader__navbar">
+					<div class="row">
+						<div class="col-xs-12 siteHeader__location">
+							Ваше местоположение: 
+							<span id="siteHeader__location--current">
+								Определяем...
+							</span>
+						</div>
+					</div>
+					<div class="navbar-header">
+						<a class="navbar-brand" href="index.html">
+							<img class="img-responsive" src="img/logo.png" class="navbar__logo">
+						</a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar__list">
+							<span class="sr-only">Открыть меню</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" class="navbar__list" id="navbar__list">
+						<ul class="nav navbar-nav">
+							<li class="divider-vertical list__item"></li>
+							<li class="dropdown list__item">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Дошкольное <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="list.html" title="Детские сады ->">Детские сады</a></li>
+										<li><a href="list.html" title="Подготовительные школы ->">Подготовительные школы</a></li>
+										<li><a href="list.html" title="Кружки ->">Кружки</a></li>
+									</ul>
+							</li>
+							<li class="dropdown list__item">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Обязательное <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="list.html" title="Школы ->">Школы</a></li>
+										<li><a href="list.html" title="Гимназии ->">Гимназии</a></li>
+										<li><a href="list.html" title="Школы-интернат ->">Школы-интернат</a></li>
+										<li><a href="list.html" title="Кадетские школы ->">Кадетские школы</a></li>
+									</ul>
+							</li>
+							<li class="dropdown list__item">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Профессиональное <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="list.html" title="Профессиональные училища ->">Профессиональные училища</a></li>
+										<li><a href="list.html" title="Профессиональные лицеи ->">Профессиональные лицеи</a></li>
+										<li><a href="list.html" title="Колледжи ->">Колледжи</a></li>
+										<li><a href="list.html" title="Техникумы ->">Техникумы</a></li>
+									</ul>
+							</li>
+							<li class="dropdown list__item">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Высшее <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="list.html" title="Институты ->">Институты</a></li>
+										<li><a href="list.html" title="Академии ->">Академии</a></li>
+										<li><a href="list.html" title="Университеты ->">Университеты</a></li>
+									</ul>
+							</li>
+							<li class="dropdown list__item">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Дополнительное <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="list.html" title="Повышение квалификации ->">Институты повышения квалификации</a></li>
+										<li><a href="list.html" title="Курсы ->">Курсы</a></li>
+										<li><a href="list.html" title="Вождение ->">Вождение</a></li>
+										<li><a href="list.html" title="Спорт ->">Спортивные учереждения</a></li>
+										<li><a href="list.html" title="Творчество ->">Творческие учереждения</a></li>
+									</ul>
+							</li>
+						</ul>
+						<form class="navbar-form navbar-right" role="form">
+							<div class="form-group">
+								<label class="sr-only" for="#siteHeader-loginForm-email">Почта: </label>
+									<input type="email" class="form-control" id="siteHeader-loginForm-email" placeholder="email@smth.com">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="#siteHeader-loginForm-password">Пароль: </label>
+									<input type="password" class="form-control" id="siteHeader-loginForm-password" placeholder="Пароль">
+							</div>
+							<button type="button" title="Войти" class="btn btn-success">
+								<span class="glyphicon glyphicon-log-in"></span>
+							</button>
+							<a type="button" title="Зарегистрироваться" class="btn btn-primary" href="registration.html">
+								<span class="glyphicon glyphicon-plus"></span>
+							</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="row siteBody">
+			<div class="col-xs-12">
+				<div class = "row siteBody__welcome">
+						<div class = "col-md-8 col-md-offset-2 text-center">
+							<h1>Всероссийский информационно-образовательный портал</h1>
+							<h2 class="header--second">приветствует Вас!</h2>
+							<p class = "text-justify">
+								Мы знаем, как дорога каждая секунда жизни, будь Вы ещё беспечным первоклассником или заслуженным преподавателем. Поэтому на данном портале собрана необходимая информация обо всех учебных заведениях России: от детского садика до курсов вождения.
+							</p>
+						</div>
+					</div>
+
+					<div class = "row siteBody__whoRU">
+						<div class = "col-lg-4 siteBody__whoRU--prestudent">
+							<h2 class = "header--second text-center">Вы абитуриент?</h2>
+							<p class = "text-justify">
+								Собираетесь начать или продолжить свой путь по просторам знаний? Не знаете, что лучше выбрать? Выбрав направление и тип заведения, Вы получите всю самую актуальную информацию об интересующем Вас учебном(-ых) заведении(-ях).
+							</p>
+							<p class = "text-justify">
+								Ещё на зарегистрировались? Скорее на страницу <a href = "registration.html">регистрации</a>! Создав личный кабинет, у Вас появится возможность отслеживать самые последние новости выбранных заведений, а также Вы сможете подать заявление на поступление онлайн и, как только вывесят списки поступивших, узнать о зачислении из личного кабинета!
+							</p>
+						</div>
+						<div class = "col-lg-4 siteBody__whoRU--student">
+							<h2 class = "header--second text-center">Вы учащийся?</h2>
+							<p class = "text-justify">
+								Вместе с нами следите за самыми важными новостями! <a href = "registration.html">Зарегистрируйтесь</a> и получите доступ к расписанию занятий, контактным данным преподавателей, форме обратной связи с ними и многое другое!
+							</p>
+							<p class = "text-justify">
+								Оставляйте отзывы, делитесь впечатлениями об учебном заведении или его сотрудниках!
+							</p>
+						</div>
+						<div class = "col-lg-4 siteBody__whoRU--teacher">
+							<h2 class = "header--second text-center">Вы преподаватель?</h2>
+							<p class = "text-justify">
+								<a href = "registration.html">Зарегистрируйтесь</a> и получите возможность дополнительной связи со своими учениками! Долой надоедливые звонки: "Здравствуйте, Семён Семёнович, а будет ли завтра пара?" и вечные просьбы выслать материал по почте.
+							</p>
+							<p class = "text-justify">
+								Выкладывайте своё расписание и контактные данные, материалы и домашнее задание, сообщайте об отмене или переносе занятия в 2 клика!
+							</p>
+						</div>
+					</div>
+			</div>
+		</main>
+
+		<footer class="row siteFooter">
+			<div class = "col-md-4 siteFooter__actions">
+				<div class = "row">
+					<div class = "col-xs-12"><a href = "#">Зарегистрировать учебное заведение</a></div>
+				</div>
+				<div class = "row">
+					<div class = "col-xs-12"><a href = "#">Получить ключ для регистрации пользователя</a></div>
+				</div>
+			</div>
+			<div class = "col-md-3 siteFooter__info">
+				<div class = "row">
+					<div class = "col-xs-12"><a href = "FAQ.html">Часто задаваемые вопросы</a></div>
+				</div>
+			</div>
+			<div class = "col-md-3 col-md-offset-2 siteFooter__contacts">
+				Есть вопросы или предложения?<br>Обращайся: <a href = "mailto: vihka-spihka@yandex.ru" title = "Написать письмо">vihka-spihka@yandex.ru</a><br>или по телефону бесплатной горячей<br>линии: 8 (800) 800-00-00
+			</div>
+		</footer>
+	</div>
+	<script src="js/libs.min.js" type="text/javascript"></script>
+	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+	<script src="js/location.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

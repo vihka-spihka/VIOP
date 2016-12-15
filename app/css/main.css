@@ -1,0 +1,23 @@
+@import url(http://allfont.ru/allfont.css?fonts=pt-sans);
+@import url(http://allfont.ru/allfont.css?fonts=pt-sans-narrow);
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+
+.siteHeader__location {
+  color: #9d9d9d; }
+
+.header--second {
+  font-family: 'PT Sans Narrow', Arial; }
+
+.navbar {
+  font-family: 'PT Sans', Arial; }
+
+.siteBody {
+  margin-top: 50px;
+  font-family: 'PT Sans', Arial; }
+
+.siteFooter {
+  font-family: 'PT Sans', Arial;
+  border-top: 1px solid #101010; }
