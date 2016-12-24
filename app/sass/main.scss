@@ -16,38 +16,79 @@
 	src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
-// @font-face {
-// 	font-family: 'FontAwesome';
-// 	src: url("../fonts/font-awesome/fontawesome-webfont.eot");
-// 	src: url("../fonts/font-awesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/font-awesome/fontawesome-webfont.woff2") format("woff2"), url("../fonts/font-awesome/fontawesome-webfont.woff") format("woff"), url("../fonts/font-awesome/fontawesome-webfont.ttf") format("truetype"), url("../fonts/font-awesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
-
-body {
-	// background-color: #222222;
-}
-
-.siteHeader__location {
-	color: #9d9d9d;
-}
-
-.header--second {
-	font-family: 'PT Sans Narrow', Arial;
-}
-
-.navbar {
-	// background-color: #121348;
+p {
 	font-family: 'PT Sans', Arial;
+}
+
+a {
+	color: black;
+	font-weight: 600;
+	&:hover {
+		color: blue;
+		text-decoration: none;
+	}
+
+	&:focus {
+		color: blue;
+		text-decoration: none;
+	}
+}
+
+#siteHeader {
+	&__location {
+		color: #9d9d9d;
+		margin-left: 10px;
+		padding: 5px 5px 5px 20px;
+		border: 1px solid #9d9d9d;
+	}
+}
+
+.header {
+	&--second {
+		font-family: 'PT Sans Narrow', Arial;
+	}
+}
+
+.siteHeader {
+	
+	& a {
+		font-weight: 400;
+	}
+
+	&__navbar {
+		font-family: 'PT Sans', Arial;
+	}
+	
+	&__logo {
+		padding-top: 10px;
+	}
+
+	&__loginForm {
+		margin-right: 10px;
+	}
+}
+
+
+#loginForm {
+	&__password {
+		max-width: 120px;
+	}
 }
 
 .siteBody {
-	margin-top: 50px;
+	margin-top: 70px;
 	font-family: 'PT Sans', Arial;
-	//background-color: #d9b18d;
 }
 
 .siteFooter {
 	font-family: 'PT Sans', Arial;
 	border-top: 1px solid #101010;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+.navbar {
+	&__signedIn {
+		display: none;
+	}
 }

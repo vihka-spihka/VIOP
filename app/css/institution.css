@@ -5,3 +5,81 @@ h1:after {
   width: 30%;
   background-color: #444e50;
   margin-top: 10px; }
+
+.siteBody__classifier {
+  background-color: #9d9d9d;
+  padding: 10px;
+  border-radius: 4px;
+  min-height: 40px;
+  max-width: 90%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 1.1em; }
+
+.form__countries {
+  display: inline-block; }
+
+.form__subjects {
+  display: inline-block; }
+
+.form__subjectCheckbox {
+  display: inline-block;
+  margin: 10px; }
+
+.form__militaryCheckbox {
+  display: inline-block; }
+
+.content__institutionsList {
+  list-style-type: none; }
+
+#dropdownCountriesBtn {
+  min-width: 150px; }
+
+.dropdownCountriesList__item {
+  margin-left: 10px; }
+  .dropdownCountriesList__item:hover {
+    cursor: pointer; }
+
+.passingScore__title {
+  margin-bottom: 15px; }
+
+.passingScore--from {
+  display: inline-block;
+  width: 50%; }
+
+.passingScore--to {
+  display: inline-block;
+  width: 50%; }
+
+.institutionsList__item--short {
+  font-size: 1.2em;
+  font-weight: 600; }
+
+.institutionsList__item--detailsBtn {
+  float: right; }
+
+.institutionsList__favourites {
+  float: right; }
+
+.favourites {
+  font-size: 1.2em; }
+  .favourites__addToFavourites:hover {
+    color: blue; }
+  .favourites__deleteFromFavourites {
+    display: none; }
+    .favourites__deleteFromFavourites:hover {
+      color: blue; }
+
+.modalBody {
+  margin-bottom: 10px; }
+  .modalBody__title {
+    font-size: 1.1em;
+    font-weight: 600; }
+
+.militaryCheckbox__checkbox {
+  margin-left: 10px; }
+
+.departList__item--shedule {
+  padding-left: 10px; }
+  .departList__item--shedule:hover {
+    color: blue; }

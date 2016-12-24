@@ -9,10 +9,11 @@
 	<meta name="description" content="ВИОП. Всероссийский информационно-образовательный портал. Здесь собрана вся информация о российских учебных заведениях разных типов и направлений." />
 	<meta name="keywords" content="Всероссийский, Информационный, Образовательный, Образование, Портал, Учебное заведение, ВУЗ, Академия, Институт, Университет, Техникум, ПТУ, Колледж, Лицей, Школа, Детский сад, Гимназия, Курсы, Информация, Расписание, Отзывы, Учащиеся, Преподаватели, Школьное образование, Дополнительное образование, Автошкола, Школа искусств, Музыкальная школа, Секции, Спорт, Высшее образование, Профессиональное образование, Обязательное образование, Дошкольное образование, Школа-интернат" />
 	<link rel="shortcut icon" href="favicon.ico">
-	<title>ВИОП | FAQ</title>
+	<title>ВИОП | Профиль</title>
 
 	<link href="css/libs.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+	<link href="css/profile.css" rel="stylesheet">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -96,67 +97,91 @@
 								<span class="glyphicon glyphicon-log-out"></span>
 							</a>
 						</div>
-						<form class="navbar-form navbar-right siteHeader__loginForm" role="form">
-							<div class="form-group">
-								<label class="sr-only" for="#loginForm__email">Почта: </label>
-									<input type="email" class="form-control" id="loginForm__email" placeholder="email@smth.com">
-							</div>
-							<div class="form-group">
-								<label class="sr-only" for="#loginForm__password">Пароль: </label>
-									<input type="password" class="form-control" id="loginForm__password" placeholder="Пароль">
-							</div>
-							<a type="button" title="Войти" class="btn btn-success" href="profile.html">
-								<span class="glyphicon glyphicon-log-in"></span>
-							</a>
-							<a type="button" title="Зарегистрироваться" class="btn btn-primary" href="registration.html">
-								<span class="glyphicon glyphicon-plus"></span>
-							</a>
-						</form>
 					</div>
 				</div>
 			</div>
 		</header>
 
 		<main class="row siteBody">
-			<div class="col-xs-12">
-				<h1>Часто задаваемые вопросы</h1>
-				<div class="row">
+			<h1>Мой профиль</h1>
+			<div class="col-xs-5 col-sm-3 siteBody__menu">
+				<ul class="list-group menu__menuList">
+					<a href="#" class="list-group-item menuList__item" id="item__page" title="Моя страница">Моя страница</a>
+					<a href="#" class="list-group-item menuList__item" id="item__msg" title="Мои сообщения">Сообщения<span class="badge menu__badge--unreadMsgs">23</span></a>
+					<a href="#" class="list-group-item menuList__item" id="item__institutions" title="Мои заведения">Мои заведения</a>
+					<a href="#" class="list-group-item menuList__item" id="item__favourites" title="Мои избранные">Избранные</a>
+					<a href="#" class="list-group-item menuList__item" id="item__applications" title="Мои избранные">Заявки</a>
+				</ul>
+			</div>
+			<div class="col-xs-6 col-xs-offset-1 col-sm-8 siteBody__content">
+				<div class="row content__myInfo" id="content__myInfo">
 					<div class="col-xs-12">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">Как мне получить ключ регистрации?</h3>
+						<h2 class="header--second myInfo__userFIO"><span class="myInfo__userFIO--surname">Фамилия</span> <span class="myInfo__userFIO--fName">Имя</span></h2>
+							<div class="myInfo__email">Почта: <span class="myInfo__email--adress">адрес@нечто.ру</span></div>
+							<div class="myInfo__sex">Пол: <span class="myInfo__sex--text">пол</span></div>
+							<div class="myInfo__phone">Номер телефона: <span class="myInfo__phone--text">555-55-55</span></div>
+					</div>
+				</div>
+				<div class="row content__myMsg" id="content__myMsg">
+					<div class="col-xs-12">
+						<h2 class="header--second">Мои сообщения</h2>
+							<div class="panel panel-default myMsg__msgList">
+								<div class="panel-body msgList__item">
+									переписка 1
+								</div>
+								<div class="panel-body msgList__item">
+									переписка 2
+								</div>
+								<div class="panel-body msgList__item">
+									переписка 3
+								</div>
+								<div class="panel-body msgList__item">
+									переписка 4
+								</div>
 							</div>
-							<div class="panel-body">
-								Для получения ключа обратись к представителю заведения. Он выдаст ключ, который будет действителен в течении 48 часов.
+							<div class="panel panel-default myMsg__panel">
+								<div class="panel-heading myMsg__panel--anotherUserFIO">Оппонент</div>
+								<div class="panel-body">
+									переписка
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="row content__myInstitutions" id="content__myInstitutions">
+					<div class="col-xs-12">
+						<h2 class="header--second">Мои заведения</h2>
+						<div class="panel panel-default myInstitutions__instList">
+							<div class="panel-body instList__item">
+								заведение 1
+							</div>
+							<div class="panel-body instList__item">
+								заведение 2
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row content__myFavourites" id="content__myFavourites">
 					<div class="col-xs-12">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">Что делать, если мой ключ проходит проверку при регистрации?</h3>
+						<h2 class="header--second">Мои избранные</h2>
+						<div class="panel panel-default myFavourites__favList">
+							<div class="panel-body favList__item">
+								избранное 1
 							</div>
-							<div class="panel-body">
-								Прежде всего, не переживай. Возможно несколько вариантов решения данной проблемы:
-								<ul>
-									<li>тщательно проверь вводимые данные. Возможно, ты допустили ошибку при вводе. Вводимый ключ должен быть идентичен тому, что ты получил от представителя заведения (если буква написана в верхнем регистре, не ленись и воспользуйся клавишой Shift).</li>
-									<li>вспомни о том, как давно ты получил данный ключ. Если прошло более 48 часов, обратись к представителю заведения за новым ключем. Помни, ключ действителен только 48 часов, по истечении которых, он удаляется из базы и перестает быть действительным.</li>
-									<li>иная причина? Свяжись с нами по почте <a href = "mailto: viop.support@gmail.com" title = "Написать письмо">viop.support@gmail.com </a> и мы постараемся максимально быстро решить возникшую проблему.</li>
-								</ul>
+							<div class="panel-body favList__item">
+								избранное 2
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row content__myApplications" id="content__myApplications">
 					<div class="col-xs-12">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">Я поступил в учебное заведение, как мне поменять статус?</h3>
+						<h2 class="header--second">Заявки</h2>
+						<div class="panel panel-default myApplications__appList">
+							<div class="panel-body appList__item">
+								Заявка 1
 							</div>
-							<div class="panel-body">
-								Все просто! Система сама исправит твои статус, если ты введешь ключ доступа, полученный в заведении.
+							<div class="panel-body appList__item">
+								Заявка 2
 							</div>
 						</div>
 					</div>
@@ -184,8 +209,9 @@
 		</footer>
 	</div>
 	<script src="js/libs.min.js" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript"></script>
 	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 	<script src="js/location.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	<script src="js/profile.js" type="text/javascript"></script>
 </body>
 </html>

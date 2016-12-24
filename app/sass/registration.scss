@@ -1,0 +1,40 @@
+.description {
+	&__text {
+		margin-bottom: 20px;
+	}
+}
+
+.incorrect {
+	color: red;
+	display: none;
+
+	&:first-child {
+		display: inline;
+	}
+}
+
+.comments {
+	font-size: 0.8em;
+}
+
+.siteBody {
+	margin-top: 70px;
+}
+
+h1:after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 30%;
+	background-color: #444e50;
+	margin-top: 10px;
+}
+
+.elem {
+	&__submitBtn {
+		& .btn {
+			min-width: 15%;
+			max-width: 20%;
+		}
+	}
+}

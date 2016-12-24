@@ -7,12 +7,13 @@
 	<meta name="author" content="Viktoriya Const" />
 	<meta name="copyright" content="V.Const" />
 	<meta name="description" content="ВИОП. Всероссийский информационно-образовательный портал. Здесь собрана вся информация о российских учебных заведениях разных типов и направлений." />
-	<meta name="keywords" content="Всероссийский, Информационный, Образовательный, Образование, Портал, Учебное заведение, ВУЗ, Академия, Институт, Университет, Техникум, ПТУ, Колледж, Лицей, Школа, Детский сад, Гимназия, Курсы, Информация, Расписание, Отзывы, Учащиеся, Преподаватели, Школьное образование, Дополнительное образование, Автошкола, Школа искусств, Музыкальная школа, Секции, Спорт, Высшее образование, Профессиональное образование, Обязательное образование, Дошкольное образование, Школа-интернат" />
+	<meta name="keywords" content="Всероссийский, Информационный, Образовательный, Образование, Портал, Регистрация, Учебное заведение, ВУЗ, Академия, Институт, Университет, Техникум, ПТУ, Колледж, Лицей, Школа, Детский сад, Гимназия, Курсы, Информация, Расписание, Отзывы, Учащиеся, Преподаватели, Школьное образование, Дополнительное образование, Автошкола, Школа искусств, Музыкальная школа, Секции, Спорт, Высшее образование, Профессиональное образование, Обязательное образование, Дошкольное образование, Школа-интернат" />
 	<link rel="shortcut icon" href="favicon.ico">
-	<title>Всероссийский информационно-образовательный портал</title>
+	<title>ВИОП | Регистрация</title>
 
 	<link href="css/libs.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+	<link href="css/registration.css" rel="stylesheet">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,9 +27,14 @@
 		<header class="row siteHeader">
 			<div class="col-xs-12">
 				<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" class="siteHeader__navbar">
+					<div class="row">
+						<div class="col-xs-12" id="siteHeader__location">
+								Определяем местоположение...
+						</div>
+					</div>
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">
-							<img class="img-responsive" src="img/logo.png" class="navbar__logo">
+						<a class="navbar-brand siteHeader__logo" href="index.html">
+							<img class="img-responsive" src="img/logo.png" class="logo__img">
 						</a>
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar__list">
 							<span class="sr-only">Открыть меню</span>
@@ -43,62 +49,62 @@
 							<li class="dropdown list__item">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Дошкольное <b class="caret"></b></a>
 									<ul class="dropdown-menu">
-										<li><a href="list.html" title="Детские сады ->">Детские сады</a></li>
-										<li><a href="list.html" title="Подготовительные школы ->">Подготовительные школы</a></li>
-										<li><a href="list.html" title="Кружки ->">Кружки</a></li>
+										<li><a href="institutions.html" title="Детские сады ->">Детские сады</a></li>
+										<li><a href="institutions.html" title="Подготовительные школы ->">Подготовительные школы</a></li>
+										<li><a href="institutions.html" title="Кружки ->">Кружки</a></li>
 									</ul>
 							</li>
 							<li class="dropdown list__item">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Обязательное <b class="caret"></b></a>
 									<ul class="dropdown-menu">
-										<li><a href="list.html" title="Школы ->">Школы</a></li>
-										<li><a href="list.html" title="Гимназии ->">Гимназии</a></li>
-										<li><a href="list.html" title="Школы-интернат ->">Школы-интернат</a></li>
-										<li><a href="list.html" title="Кадетские школы ->">Кадетские школы</a></li>
+										<li><a href="institutions.html" title="Школы ->">Школы</a></li>
+										<li><a href="institutions.html" title="Гимназии ->">Гимназии</a></li>
+										<li><a href="institutions.html" title="Школы-интернат ->">Школы-интернат</a></li>
+										<li><a href="institutions.html" title="Кадетские школы ->">Кадетские школы</a></li>
 									</ul>
 							</li>
 							<li class="dropdown list__item">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Профессиональное <b class="caret"></b></a>
 									<ul class="dropdown-menu">
-										<li><a href="list.html" title="Профессиональные училища ->">Профессиональные училища</a></li>
-										<li><a href="list.html" title="Профессиональные лицеи ->">Профессиональные лицеи</a></li>
-										<li><a href="list.html" title="Колледжи ->">Колледжи</a></li>
-										<li><a href="list.html" title="Техникумы ->">Техникумы</a></li>
+										<li><a href="institutions.html" title="Профессиональные училища ->">Профессиональные училища</a></li>
+										<li><a href="institutions.html" title="Профессиональные лицеи ->">Профессиональные лицеи</a></li>
+										<li><a href="institutions.html" title="Колледжи ->">Колледжи</a></li>
+										<li><a href="institutions.html" title="Техникумы ->">Техникумы</a></li>
 									</ul>
 							</li>
 							<li class="dropdown list__item">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Высшее <b class="caret"></b></a>
 									<ul class="dropdown-menu">
-										<li><a href="list.html" title="Институты ->">Институты</a></li>
-										<li><a href="list.html" title="Академии ->">Академии</a></li>
-										<li><a href="list.html" title="Университеты ->">Университеты</a></li>
+										<li><a href="institutions.html" title="Институты ->">Институты</a></li>
+										<li><a href="institutions.html" title="Академии ->">Академии</a></li>
+										<li><a href="institutions.html" title="Университеты ->">Университеты</a></li>
 									</ul>
 							</li>
 							<li class="dropdown list__item">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Дополнительное <b class="caret"></b></a>
 									<ul class="dropdown-menu">
-										<li><a href="list.html" title="Повышение квалификации ->">Институты повышения квалификации</a></li>
-										<li><a href="list.html" title="Курсы ->">Курсы</a></li>
-										<li><a href="list.html" title="Вождение ->">Вождение</a></li>
-										<li><a href="list.html" title="Спорт ->">Спортивные учереждения</a></li>
-										<li><a href="list.html" title="Творчество ->">Творческие учереждения</a></li>
+										<li><a href="institutions.html" title="Повышение квалификации ->">Институты повышения квалификации</a></li>
+										<li><a href="institutions.html" title="Курсы ->">Курсы</a></li>
+										<li><a href="institutions.html" title="Вождение ->">Вождение</a></li>
+										<li><a href="institutions.html" title="Спорт ->">Спортивные учереждения</a></li>
+										<li><a href="institutions.html" title="Творчество ->">Творческие учереждения</a></li>
 									</ul>
 							</li>
 						</ul>
-						<form class="navbar-form navbar-right" role="form">
+						<form class="navbar-form navbar-right siteHeader__loginForm" role="form">
 							<div class="form-group">
-								<label class="sr-only" for="#siteHeader-loginForm-email">Почта: </label>
-									<input type="email" class="form-control" id="siteHeader-loginForm-email" placeholder="email@smth.com">
+								<label class="sr-only" for="#loginForm__email">Почта: </label>
+									<input type="email" class="form-control" id="loginForm__email" placeholder="email@smth.com">
 							</div>
 							<div class="form-group">
-								<label class="sr-only" for="#siteHeader-loginForm-password">Пароль: </label>
-									<input type="password" class="form-control" id="siteHeader-loginForm-password" placeholder="Пароль">
+								<label class="sr-only" for="#loginForm__password">Пароль: </label>
+									<input type="password" class="form-control" id="loginForm__password" placeholder="Пароль">
 							</div>
-							<button type="button" title="Войти" class="btn btn-success">
+							<a type="button" title="Войти" class="btn btn-success" href="profile.html">
 								<span class="glyphicon glyphicon-log-in"></span>
-							</button>
+							</a>
 							<a type="button" title="Зарегистрироваться" class="btn btn-primary" href="registration.html">
-								<span class="fa fa-user-plus" aria-hidden="true"></span>
+								<span class="glyphicon glyphicon-plus"></span>
 							</a>
 						</form>
 					</div>
@@ -108,69 +114,87 @@
 
 		<main class="row siteBody">
 			<div class="col-xs-12">
-				<form role = "form" class="siteBody__regForm">
-					<div class = "form-group regForm__elem">
-						<span class = "comments">*</span>
-						<label for = "#siteBody-content-surname">Фамилия: </label>
-							<span class = "glyphicon glyphicon-info-sign elem__comments" data-toggle = "tooltip" data-placement = "right" title = "Допустимы только буквы и дефис"></span>
-						<input type = "text" class = "form-control" id = "siteBody-content-surname" placeholder = "Иванов / Иванов-Сидоров" required>
-							<span class = "incorrect"><span class = "glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
+				<div class="row siteBody__description">
+					<div class="col-xs-12">
+						<h1>Регистрация</h1>
+						<p class="description__text">Заполните поля ниже.<br>Поля, отмеченные <span class="glyphicon glyphicon-asterisk comments"></span>, должны быть заполнены в обязательном порядке.<br>Для дополнительной информации наведите курсор мыши на <span class="glyphicon glyphicon-info-sign"></span>.</p>
 					</div>
-					<div class = "form-group regForm__elem">
-						<span class = "elem__comments">*</span>
-						<label for = "#siteBody-content-name">Имя: </label>
-							<span class = "glyphicon glyphicon-info-sign elem__comments" data-toggle = "tooltip" data-placement = "right" title = "Допустимы только буквы и дефис"></span>
-						<input type = "text" class = "form-control" id = "siteBody-content-name"  placeholder = "Анна / Анна-Мария" required>
-							<span class = "incorrect"><span class = "glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+						<form role="form" class="siteBody__regForm">
+							<div class="form-group regForm__elem elem__surname">
+								<span class="glyphicon glyphicon-asterisk comments"></span>
+								<label for="#surname__input">Фамилия: </label>
+									<span class="glyphicon glyphicon-info-sign elem__comments" data-toggle="tooltip" data-placement="right" title="Допустимы только буквы и дефис"></span>
+								<input type="text" class="form-control" id="surname__input" placeholder="Иванов / Иванов-Сидоров" required>
+									<span class="incorrect"><span class="glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
+							</div>
+							<div class="form-group regForm__elem elem__name">
+								<span class="glyphicon glyphicon-asterisk comments"></span>
+								<label for="#name__input">Имя: </label>
+									<span class="glyphicon glyphicon-info-sign elem__comments" data-toggle="tooltip" data-placement="right" title="Допустимы только буквы и дефис"></span>
+								<input type="text" class="form-control" id="name__input"  placeholder="Анна / Анна-Мария" required>
+									<span class="incorrect"><span class="glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
+							</div>
+							<div class="form-group regForm__elem elem__secondName">
+								<label for="#secondName__input">Отчество: </label>
+									<span class="glyphicon glyphicon-info-sign elem__comments" data-toggle="tooltip" data-placement="right" title="Допустимы только буквы"></span>
+								<input type="text" class="form-control" id="secondName__input" placeholder="Петрович">
+									<span class="incorrect"><span class="glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
+							</div>
+							<div class="form-group regForm__elem elem__email">
+								<span class="glyphicon glyphicon-asterisk comments"></span>
+								<label for="#email__input">Почта: </label>
+								<input type="text" class="form-control" id="email__input" placeholder="example@mail.com">
+								<span class="incorrect"><span class="glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
+							</div>
+							<div class="form-group regForm__elem elem__password">
+								<span class="glyphicon glyphicon-asterisk comments"></span>
+								<label for="#password__input">Пароль: </label>
+									<span class="glyphicon glyphicon-info-sign elem__comments" data-toggle="tooltip" data-placement="right" title="Пароль должен состоять из 6-20 символов и включать в себя хотя бы одну букву в верхнем регистре, хотя бы одну цифру и специальный символ (_, ^, * и так далее)"></span>
+								<input type="password" class="form-control" id="password__input" placeholder="Пароль">
+									<span class="incorrect"><span class="glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
+							</div>
+							<div class="form-group regForm__elem elem__passRepeat">
+								<span class="glyphicon glyphicon-asterisk comments"></span>
+								<label for="#passRepeat__input">Повторите пароль: </label>
+								<input type="password" class="form-control" id="passRepeat__input" placeholder="Пароль повторно">
+								<span class="incorrect"><span class="glyphicon glyphicon-exclamation-sign"></span>Не совпадает. Проверьте правильность.</span>
+							</div>
+							<div class="form-group regForm__elem elem__birthday">
+								<label for="#birthday__input">Дата рождения: </label>
+								<input type="date" class="form-control" id="birthday__input" placeholder="Выберите дату">
+								<span class="incorrect"><span class="glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
+							</div>
+							<div class="form-group regForm__elem elem__sex">
+								<p class="sex__input">Пол: </p>
+									<div class="radio">
+										<label>
+											<input type="radio" name="sexOptions" id="sex__input--female" value="female" checked>
+											Женский
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="sexOptions" id="sex__input--male" value="male">
+											Мужской
+										</label>
+									</div>
+							</div>
+							<div class="form-group regForm__elem elem__phone">
+								<label for="#phone__input">Телефон: </label>
+								<input type="text" class="form-control" id="phone__input" maxlength="12" placeholder="8 (800) 000-00-00">
+								<span class="incorrect"><span class="glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
+							</div>
+							<div class = "form-group regForm__elem elem__submitBtn text-right">
+								<button type="button" class="btn btn-success form-control">
+									Готово!
+								</button>
+							</div>
+						</form>
 					</div>
-					<div class = "form-group regForm__elem">
-						<label for = "#siteBody-content-secondName">Отчество: </label>
-							<span class = "glyphicon glyphicon-info-sign elem__comments" data-toggle = "tooltip" data-placement = "right" title = "Допустимы только буквы"></span>
-						<input type = "text" class = "form-control" id = "siteBody-content-secondName" placeholder = "Петрович">
-							<span class = "incorrect"><span class = "glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
-					</div>
-					<div class = "form-group regForm__elem">
-						<span class = "elem__comments">*</span>
-						<label for = "#siteBody-content-email">Почта: </label>
-						<input type = "text" class = "form-control" id = "siteBody-content-email" placeholder = "example@mail.com">
-						<span class = "incorrect"><span class = "glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
-					</div>
-					<div class = "form-group regForm__elem">
-						<span class = "elem__comments">*</span>
-						<label for = "#siteBody-content-password">Пароль: </label>
-							<span class = "glyphicon glyphicon-info-sign elem__comments" data-toggle = "tooltip" data-placement = "right" title = "Пароль должен состоять из 6-20 символов и включать в себя хотя бы одну букву в верхнем регистре, хотя бы одну цифру и специальный символ (_, ^, * и так далее)"></span>
-						<input type = "password" class = "form-control" id = "siteBody-content-password" placeholder = "Пароль">
-							<span class = "incorrect"><span class = "glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
-					</div>
-					<div class = "form-group regForm__elem">
-						<span class = "elem__comments">*</span>
-						<label for = "#siteBody-content-passwordRepeat">Повторите пароль: </label>
-						<input type = "password" class = "form-control" id = "siteBody-content-passwordRepeat" placeholder = "Пароль повторно">
-						<span class = "incorrect"><span class = "glyphicon glyphicon-exclamation-sign"></span>Не совпадает. Проверьте правильность.</span>
-					</div>
-					<div class = "form-group regForm__elem">
-						<label for = "#siteBody-content-birthday">Дата рождения: </label>
-						<input type = "date" class = "form-control" id = "siteBody-content-birthday" placeholder = "Выберите дату">
-						<span class = "incorrect"><span class = "glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
-					</div>
-					<div class = "form-group regForm__elem">
-						<label for = "#siteBody-content-sex">Пол: </label>
-						<input type = "text" class = "form-control" id = "siteBody-content-sex" list = "sex" placeholder = "Выберите пол">
-							<datalist id = "sex">
-								<option value = "Женский">
-								<option value = "Мужской">
-							</datalist>
-						<span class = "incorrect"><span class = "glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
-					</div>
-					<div class = "form-group regForm__elem">
-						<label for = "#siteBody-content-phoneNumber">Телефон: </label>
-						<input type = "text" class = "form-control" id = "siteBody-content-phoneNumber" maxlength="12" placeholder = "8 (800) 000-00-00">
-						<span class = "incorrect"><span class = "glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
-					</div>
-					<div class = "form-group regForm__elem">
-						<button type = "submit" class = "form-control">Готово!</button>
-					</div>
-				</form>
+				</div>
 			</div>
 		</main>
 
@@ -188,12 +212,14 @@
 					<div class = "col-xs-12"><a href = "FAQ.html">Часто задаваемые вопросы</a></div>
 				</div>
 			</div>
-			<div class = "col-md-3 col-md-offset-2 siteFooter__contacts">
-				Есть вопросы или предложения?<br>Обращайся: <a href = "mailto: vihka-spihka@yandex.ru" title = "Написать письмо">vihka-spihka@yandex.ru</a><br>или по телефону бесплатной горячей<br>линии: 8 (800) 800-00-00
+			<div class = "col-md-5 siteFooter__contacts">
+				Есть вопросы или предложения?<br>Обращайся: <a href = "mailto: viop.support@gmail.com" title = "Написать письмо">viop.support@gmail.com</a> или по телефону бесплатной горячей линии: 8 (800) 800-00-00
 			</div>
 		</footer>
 	</div>
 	<script src="js/libs.min.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script>
+	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+	<script src="js/location.js" type="text/javascript"></script>
 </body>
 </html>

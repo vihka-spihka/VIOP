@@ -1,0 +1,53 @@
+.navbar__signedIn {
+  margin: 10px 10px 5px 15px;
+  display: inline-block; }
+
+.navbar .navbar-link:hover {
+  color: blue; }
+
+.signedIn__outBtn {
+  margin-left: 5px; }
+
+h1:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30%;
+  background-color: #444e50;
+  margin-top: 10px; }
+
+.header--second:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 10%;
+  background-color: #444e50;
+  margin-top: 10px; }
+
+.siteBody__menu {
+  margin-top: 25px; }
+
+.menu__item:hover {
+  background-color: #9d9d9d; }
+
+.content__myMsg {
+  display: none; }
+
+.content__myInstitutions {
+  display: none; }
+
+.content__myFavourites {
+  display: none; }
+
+.content__myApplications {
+  display: none; }
+
+.myInfo__userFIO--fName {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 1.0em; }
+
+.myInfo__userFIO--surname {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 1.0em; }

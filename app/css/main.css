@@ -5,19 +5,52 @@
   src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
   src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
-.siteHeader__location {
-  color: #9d9d9d; }
+p {
+  font-family: 'PT Sans', Arial; }
+
+a {
+  color: black;
+  font-weight: 600; }
+  a:hover {
+    color: blue;
+    text-decoration: none; }
+  a:focus {
+    color: blue;
+    text-decoration: none; }
+
+#siteHeader__location {
+  color: #9d9d9d;
+  margin-left: 10px;
+  padding: 5px 5px 5px 20px;
+  border: 1px solid #9d9d9d; }
 
 .header--second {
   font-family: 'PT Sans Narrow', Arial; }
 
-.navbar {
+.siteHeader a {
+  font-weight: 400; }
+
+.siteHeader__navbar {
   font-family: 'PT Sans', Arial; }
 
+.siteHeader__logo {
+  padding-top: 10px; }
+
+.siteHeader__loginForm {
+  margin-right: 10px; }
+
+#loginForm__password {
+  max-width: 120px; }
+
 .siteBody {
-  margin-top: 50px;
+  margin-top: 70px;
   font-family: 'PT Sans', Arial; }
 
 .siteFooter {
   font-family: 'PT Sans', Arial;
-  border-top: 1px solid #101010; }
+  border-top: 1px solid #101010;
+  margin-bottom: 10px;
+  padding-top: 10px; }
+
+.navbar__signedIn {
+  display: none; }

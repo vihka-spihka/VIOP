@@ -1,0 +1,106 @@
+.navbar {
+	&__signedIn {
+		margin: 10px 10px 5px 15px;
+		display: inline-block;
+	}
+
+	& .navbar-link {
+		&:hover {
+			color: blue;
+		}
+	}
+}
+
+.signedIn {
+
+	&__outBtn {
+		margin-left: 5px;
+	}
+}
+
+h1:after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 30%;
+	background-color: #444e50;
+	margin-top: 10px;
+}
+
+.header {
+	&--second:after {
+		content: "";
+		display: block;
+		height: 2px;
+		width: 10%;
+		background-color: #444e50;
+		margin-top: 10px;
+	}
+}
+
+.siteBody {
+	&__menu {
+		margin-top: 25px;
+	}
+}
+
+.menu {
+	&__badge {
+		&--unreadMsgs {
+
+		}
+	}
+
+	&__item {
+
+		&:hover {
+			background-color: #9d9d9d;
+		}
+	}
+}
+
+.item {
+
+	&__page {}
+
+	&__msg {}
+
+	&__institutions {}
+
+	&__favourites {}
+}
+
+.content {
+	&__myInfo {}
+
+	&__myMsg {
+		display: none;
+	}
+
+	&__myInstitutions {
+		display: none;
+	}
+
+	&__myFavourites {
+		display: none;
+	}
+
+	&__myApplications {
+		display: none;
+	}
+}
+
+.myInfo {
+	&__userFIO {
+		&--fName {
+			display: inline-block;
+			font-size: 1.2em;
+			font-weight: 1.0em;
+		}
+		&--surname {
+			display: inline-block;
+			font-size: 1.2em;
+			font-weight: 1.0em;
+		}
+	}
+}
