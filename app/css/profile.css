@@ -1,13 +1,3 @@
-.navbar__signedIn {
-  margin: 10px 10px 5px 15px;
-  display: inline-block; }
-
-.navbar .navbar-link:hover {
-  color: blue; }
-
-.signedIn__outBtn {
-  margin-left: 5px; }
-
 h1:after {
   content: "";
   display: block;
@@ -15,6 +5,12 @@ h1:after {
   width: 30%;
   background-color: #444e50;
   margin-top: 10px; }
+
+.navbar {
+  display: inline-block; }
+
+.signedIn__outBtn {
+  margin-left: 5px; }
 
 .header--second:after {
   content: "";
@@ -29,6 +25,9 @@ h1:after {
 
 .menu__item:hover {
   background-color: #9d9d9d; }
+
+.content__myInfo {
+  margin-bottom: 15px; }
 
 .content__myMsg {
   display: none; }
@@ -51,3 +50,59 @@ h1:after {
   display: inline-block;
   font-size: 1.2em;
   font-weight: 1.0em; }
+
+.myInfo--title {
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 10px; }
+
+.myInfo--text {
+  font-weight: 500; }
+
+.myMsg__newMsgBtn {
+  margin: 10px; }
+
+.myMsg__panel {
+  max-width: 80%; }
+  .myMsg__panel--msgText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
+#newMsgModal__modalBody--text {
+  resize: none;
+  overflow-y: hidden; }
+
+.msgFooter__moreBtn:hover {
+  text-decoration: none;
+  color: blue; }
+
+.fullMsgFooter__replyText {
+  margin-top: 15px; }
+  .fullMsgFooter__replyText--text {
+    resize: none;
+    overflow-y: hidden; }
+
+.fullMsgFooter__replySubmitBtn {
+  margin-top: 15px; }
+
+.myApplications__createKeyBtn {
+  margin: 10px 10px 20px 0; }
+
+.myApplications__newApp {
+  display: block;
+  max-width: 150px; }
+
+#appBody__dropdownApp {
+  margin: 10px;
+  display: inline-block; }
+
+#appBody__generateResult {
+  font-size: 1.5em; }
+
+#dropdownApp__appBtn {
+  min-width: 150px; }
+
+.appListItem__aboutBtn:hover {
+  text-decoration: none;
+  color: blue; }

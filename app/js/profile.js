@@ -39,4 +39,17 @@ $(document).ready(function() {
 		$("#content__myInstitutions").hide();
 		$("#content__myFavourites").hide();
 	});
+
+	var applicationsList = document.getElementsByClassName('dropdownApp__appList');
+
+	applicationsList[0].addEventListener('click', function(event) {
+
+		event.stopPropagation();
+		var rolesListText = document.getElementById('dropdownApp__appBtn--text');
+		text = event.target.innerText;
+		rolesListText.innerHTML = "";
+		rolesListText.innerText = text;
+		$('#appBody__dropdownApp').removeClass('open');
+		}, false);
+
 });

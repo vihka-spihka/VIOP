@@ -16,7 +16,7 @@ h1:after {
   margin-bottom: 4%;
   font-size: 1.1em; }
 
-.form__countries {
+.form__cities {
   display: inline-block; }
 
 .form__subjects {
@@ -32,13 +32,14 @@ h1:after {
 .content__institutionsList {
   list-style-type: none; }
 
-#dropdownCountriesBtn {
+#dropdownCitiesBtn {
   min-width: 150px; }
 
-.dropdownCountriesList__item {
-  margin-left: 10px; }
-  .dropdownCountriesList__item:hover {
-    cursor: pointer; }
+.dropdownCitiesList__item {
+  padding-left: 10px; }
+  .dropdownCitiesList__item:hover {
+    cursor: pointer;
+    background-color: #d4d4d4; }
 
 .passingScore__title {
   margin-bottom: 15px; }

@@ -53,4 +53,9 @@ a {
   padding-top: 10px; }
 
 .navbar__signedIn {
-  display: none; }
+  display: none;
+  margin: 10px 10px 5px 15px;
+  display: inline-block; }
+
+.navbar .navbar-link:hover {
+  color: blue; }

@@ -1,3 +1,12 @@
+h1:after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 30%;
+	background-color: #444e50;
+	margin-top: 10px;
+}
+
 .description {
 	&__text {
 		margin-bottom: 20px;
@@ -21,20 +30,63 @@
 	margin-top: 70px;
 }
 
-h1:after {
-	content: "";
-	display: block;
-	height: 2px;
-	width: 30%;
-	background-color: #444e50;
-	margin-top: 10px;
-}
-
 .elem {
+
+	&__country {
+		display: inline-block;
+	} 
+
+	&__city {
+		display: inline-block;
+		float: right;
+	}
+
 	&__submitBtn {
 		& .btn {
 			min-width: 15%;
 			max-width: 20%;
 		}
+	}
+}
+
+#dropdownCountriesBtn {
+	min-width: 200px;
+}
+
+.dropdownCountriesList {
+	&__item {
+		padding-left: 10px;
+		&:hover {
+			cursor: pointer;
+			background-color: #d4d4d4;
+		}
+	}
+}
+
+#dropdownCitiesBtn {
+	min-width: 200px;
+}
+
+.dropdownCitiesList {
+	&__item {
+		padding-left: 10px;
+		&:hover {
+			cursor: pointer;
+			background-color: #d4d4d4;
+		}
+	}
+}
+
+#description {
+	&__input {
+		overflow-y: hidden;
+		resize: none;
+		margin-bottom: 15px;
+	}
+}
+
+#regKey {
+	&__input {
+		width: 60%;
 	}
 }

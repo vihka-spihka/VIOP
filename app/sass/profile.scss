@@ -1,14 +1,14 @@
-.navbar {
-	&__signedIn {
-		margin: 10px 10px 5px 15px;
-		display: inline-block;
-	}
+h1:after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 30%;
+	background-color: #444e50;
+	margin-top: 10px;
+}
 
-	& .navbar-link {
-		&:hover {
-			color: blue;
-		}
-	}
+.navbar {
+	display: inline-block;
 }
 
 .signedIn {
@@ -18,14 +18,6 @@
 	}
 }
 
-h1:after {
-	content: "";
-	display: block;
-	height: 2px;
-	width: 30%;
-	background-color: #444e50;
-	margin-top: 10px;
-}
 
 .header {
 	&--second:after {
@@ -71,7 +63,9 @@ h1:after {
 }
 
 .content {
-	&__myInfo {}
+	&__myInfo {
+		margin-bottom: 15px;
+	}
 
 	&__myMsg {
 		display: none;
@@ -101,6 +95,123 @@ h1:after {
 			display: inline-block;
 			font-size: 1.2em;
 			font-weight: 1.0em;
+		}
+	}
+	
+	&--title {
+		font-size: 1.1em;
+		font-weight: 600;
+		padding: 10px;
+	}
+
+	&--text {
+		font-weight: 500;
+	}
+
+	&__role {}
+
+	&__description {}
+
+	&__country {}
+
+	&__city {}
+
+	&__email {}
+
+	&__phone {}
+}
+
+.myMsg {
+	&__newMsgBtn {
+		margin: 10px;
+	}
+
+	&__panel {
+		max-width: 80%;
+		&--msgText {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+}
+
+#newMsgModal {
+	&__modalBody {
+		&--text {
+			resize: none;
+			overflow-y: hidden;
+		}
+	}
+}
+
+.msgFooter {
+	&__moreBtn {
+		&:hover {
+			text-decoration: none;
+			color: blue;
+		}
+	}
+}
+
+.fullMsgFooter {
+	&__replyText {
+		margin-top: 15px;
+
+		&--text {
+			resize: none;
+			overflow-y: hidden;
+		}
+	}
+
+	&__replySubmitBtn {
+		margin-top: 15px;
+	}
+}
+
+.myApplications {
+	&__createKeyBtn {
+		margin: 10px 10px 20px 0;
+	}
+
+	&__newApp {
+		display: block;
+		max-width: 150px;
+	}
+}
+
+#appBody {
+	&__dropdownApp {
+		margin: 10px;
+		display: inline-block;
+	}
+
+	&__generateResult {
+		font-size: 1.5em;
+	}
+}
+
+#dropdownApp {
+	&__appBtn {
+		min-width: 150px;
+	}
+}
+
+// .appList {
+// 	&__item {
+// 		&:hover {
+// 			background-color: #d4d4d4;
+// 			cursor: pointer;
+// 		}
+// 	}
+// }
+
+.appListItem {
+	&__aboutBtn {
+
+		&:hover {
+			text-decoration: none;
+			color: blue;
 		}
 	}
 }

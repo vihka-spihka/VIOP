@@ -1,3 +1,11 @@
+h1:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30%;
+  background-color: #444e50;
+  margin-top: 10px; }
+
 .description__text {
   margin-bottom: 20px; }
 
@@ -13,14 +21,39 @@
 .siteBody {
   margin-top: 70px; }
 
-h1:after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 30%;
-  background-color: #444e50;
-  margin-top: 10px; }
+.elem__country {
+  display: inline-block; }
+
+.elem__city {
+  display: inline-block;
+  float: right; }
 
 .elem__submitBtn .btn {
   min-width: 15%;
   max-width: 20%; }
+
+#dropdownCountriesBtn {
+  min-width: 200px; }
+
+.dropdownCountriesList__item {
+  padding-left: 10px; }
+  .dropdownCountriesList__item:hover {
+    cursor: pointer;
+    background-color: #d4d4d4; }
+
+#dropdownCitiesBtn {
+  min-width: 200px; }
+
+.dropdownCitiesList__item {
+  padding-left: 10px; }
+  .dropdownCitiesList__item:hover {
+    cursor: pointer;
+    background-color: #d4d4d4; }
+
+#description__input {
+  overflow-y: hidden;
+  resize: none;
+  margin-bottom: 15px; }
+
+#regKey__input {
+  width: 60%; }

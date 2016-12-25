@@ -162,33 +162,62 @@
 								<input type="password" class="form-control" id="passRepeat__input" placeholder="Пароль повторно">
 								<span class="incorrect"><span class="glyphicon glyphicon-exclamation-sign"></span>Не совпадает. Проверьте правильность.</span>
 							</div>
-							<div class="form-group regForm__elem elem__birthday">
-								<label for="#birthday__input">Дата рождения: </label>
-								<input type="date" class="form-control" id="birthday__input" placeholder="Выберите дату">
-								<span class="incorrect"><span class="glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
+							<div class="form-group regForm__elem elem__country">
+								<label for="#country__dropdownCountriesList">
+									Выберите страну проживания: 
+								</label>
+								<div class="dropdown country__dropdownCountriesList" id="country__dropdownCountriesList">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownCountriesBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<span class="dropdownCountriesBtn__text">
+											Выберите страну
+										</span>
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" id="dropdownCountriesList" aria-labelledby="dropdownCountriesBtn">
+									<li class="dropdownCountriesList__item">
+										Выберите страну
+									</li>
+									</ul>
+								</div>
 							</div>
-							<div class="form-group regForm__elem elem__sex">
-								<p class="sex__input">Пол: </p>
-									<div class="radio">
-										<label>
-											<input type="radio" name="sexOptions" id="sex__input--female" value="female" checked>
-											Женский
-										</label>
-									</div>
-									<div class="radio">
-										<label>
-											<input type="radio" name="sexOptions" id="sex__input--male" value="male">
-											Мужской
-										</label>
-									</div>
+							<div class="form-group regForm__elem elem__city">
+								<label for="#city__dropdownCitiesList">
+									Выберите город проживания: 
+								</label>
+								<div class="dropdown city__dropdownCitiesList">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownCitiesBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<span class="dropdownCitiesBtn__text">
+											Выберите город
+										</span>
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" id="dropdownCitiesList" aria-labelledby="dropdownCitiesBtn">
+										<li class="dropdownCitiesList__item">
+											Выберите город
+										</li>
+									</ul>
+								</div>
 							</div>
 							<div class="form-group regForm__elem elem__phone">
 								<label for="#phone__input">Телефон: </label>
 								<input type="text" class="form-control" id="phone__input" maxlength="12" placeholder="8 (800) 000-00-00">
 								<span class="incorrect"><span class="glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
 							</div>
+							<div class="regForm__elem elem__description">
+								<label for="#description__input">
+									Введите свое краткое описание:
+									<span class="glyphicon glyphicon-info-sign elem__comments" data-toggle="tooltip" data-placement="right" title="Например, расскажите всем, кем вы являетесь, какие у вас интересы и пр."></span>
+								</label>
+								<textarea class="form-control" id="description__input" rows="3" maxlength="500"  placeholder="Описание"></textarea>
+							</div>
+							<div class="form-group regForm__elem elem__regKey">
+								<label for="#regKey__input">Введите регистрационный ключ: </label>
+									<span class="glyphicon glyphicon-info-sign elem__comments" data-toggle="tooltip" data-placement="right" title="Ключ необходим для того, чтобы связать вас с заведением. Если у вас нет ключа, просто оставьте поле пустым."></span>
+								<input type="text" class="form-control" id="regKey__input"  placeholder="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" required>
+									<span class="incorrect"><span class="glyphicon glyphicon-exclamation-sign"></span>Ошибка. Проверьте правильность.</span>
+							</div>
 							<div class = "form-group regForm__elem elem__submitBtn text-right">
-								<button type="button" class="btn btn-success form-control">
+								<button type="button" class="btn btn-success form-control" id="submitBtn__btn">
 									Готово!
 								</button>
 							</div>
@@ -201,10 +230,7 @@
 		<footer class="row siteFooter">
 			<div class = "col-md-4 siteFooter__actions">
 				<div class = "row">
-					<div class = "col-xs-12"><a href = "#">Зарегистрировать учебное заведение</a></div>
-				</div>
-				<div class = "row">
-					<div class = "col-xs-12"><a href = "#">Получить ключ для регистрации пользователя</a></div>
+					<div class = "col-xs-12"><a href = "institutionRegistry.html">Зарегистрировать учебное заведение</a></div>
 				</div>
 			</div>
 			<div class = "col-md-3 siteFooter__info">
@@ -221,5 +247,6 @@
 	<script src="js/main.js" type="text/javascript"></script>
 	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 	<script src="js/location.js" type="text/javascript"></script>
+	<script src="js/registration.js" type="text/javascript"></script>
 </body>
 </html>

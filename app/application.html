@@ -9,10 +9,11 @@
 	<meta name="description" content="ВИОП. Всероссийский информационно-образовательный портал. Здесь собрана вся информация о российских учебных заведениях разных типов и направлений." />
 	<meta name="keywords" content="Всероссийский, Информационный, Образовательный, Образование, Портал, Учебное заведение, ВУЗ, Академия, Институт, Университет, Техникум, ПТУ, Колледж, Лицей, Школа, Детский сад, Гимназия, Курсы, Информация, Расписание, Отзывы, Учащиеся, Преподаватели, Школьное образование, Дополнительное образование, Автошкола, Школа искусств, Музыкальная школа, Секции, Спорт, Высшее образование, Профессиональное образование, Обязательное образование, Дошкольное образование, Школа-интернат" />
 	<link rel="shortcut icon" href="favicon.ico">
-	<title>ВИОП | Главная</title>
+	<title>ВИОП | Заявление на поступление</title>
 
 	<link href="css/libs.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+	<link href="css/application.css" rel="stylesheet">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -96,83 +97,153 @@
 								<span class="glyphicon glyphicon-log-out"></span>
 							</a>
 						</div>
-						<form class="navbar-form navbar-right siteHeader__loginForm" role="form">
-							<div class="form-group">
-								<label class="sr-only" for="#loginForm__email">Почта: </label>
-									<input type="email" class="form-control" id="loginForm__email" placeholder="email@smth.com">
-							</div>
-							<div class="form-group">
-								<label class="sr-only" for="#loginForm__password">Пароль: </label>
-									<input type="password" class="form-control" id="loginForm__password" placeholder="Пароль">
-							</div>
-							<a type="button" title="Войти" class="btn btn-success" href="profile.html">
-								<span class="glyphicon glyphicon-log-in"></span>
-							</a>
-							<a type="button" title="Зарегистрироваться" class="btn btn-primary" href="registration.html">
-								<span class="glyphicon glyphicon-plus"></span>
-							</a>
-						</form>
 					</div>
 				</div>
 			</div>
 		</header>
 
 		<main class="row siteBody">
-			<div class="col-xs-12">
-				<div class = "row siteBody__welcome">
-						<div class = "col-md-8 col-md-offset-2 text-center">
-							<h1>Всероссийский информационно-образовательный портал</h1>
-							<h2 class="header--second">приветствует Вас!</h2>
-							<p class = "text-justify">
-								Мы знаем, как дорога каждая секунда жизни, будь Вы ещё беспечным первоклассником или заслуженным преподавателем. Поэтому на данном портале собрана необходимая информация обо всех учебных заведениях России: от детского садика до курсов вождения.<br>Мы пройдем с вами через все важные этапы твоей жизни и поможем сделать её немного проще.
-							</p>
-						</div>
+			<h1>Заявление на поступление</h1>
+			<form class="appForm col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-3">
+				<div class="form-group appForm__userSurname">
+					<label for="#userSurname__input">Введите фамилию: </label>
+					<input type="text" class="form-control userSurname__input" id="userSurname__input" placeholder="Фамилия" required>
+				</div>
+				<div class="form-group appForm__userName">
+					<label for="#userName__input">Введите имя: </label>
+					<input type="text" class="form-control userName__input" id="userName__input" placeholder="Имя" required>
+				</div>
+				<div class="form-group appForm__userSecondName">
+					<label for="#userSecondName__input">Введите отчество: </label>
+					<input type="text" class="form-control userSecondName__input" id="userSecondName__input" placeholder="Отчество" required>
+				</div>
+				<div class="form-group appForm__userBirthday">
+					<label for="#userBirthday__date">Введите дату рождения: </label>
+					<input type="date" class="form-control userBirthday__date" id="userBirthday__date" required>
+				</div>
+				<div class="form-group appForm__userSex">
+					<label for="">Выберите пол: </label>
+					<div class="radio">
+						<label>
+							<input type="radio" name="userSex__radio" id="userSex__radio--female" value="Женский" checked>
+							Женский
+						</label>
 					</div>
-
-					<div class = "row siteBody__whoRU">
-						<div class = "col-lg-4 siteBody__whoRU--prestudent">
-							<h2 class = "header--second text-center">Вы абитуриент?</h2>
-							<p class = "text-justify">
-								Собираетесь начать или продолжить свой путь по просторам знаний? Не знаете, что лучше выбрать? Выбрав направление и тип заведения, Вы получите всю самую актуальную информацию об интересующем Вас учебном заведении.
-							</p>
-							<p class = "text-justify">
-								Ещё на зарегистрировались? Скорее на страницу <a href = "registration.html">регистрации</a>! Создав личный кабинет, у Вас появится возможность отслеживать самые последние новости выбранных заведений, а также Вы сможете подать заявление на поступление онлайн и, как только вывесят списки поступивших, узнать о зачислении из личного кабинета!
-							</p>
-						</div>
-						<div class = "col-lg-4 siteBody__whoRU--student">
-							<h2 class = "header--second text-center">Вы учащийся?</h2>
-							<p class = "text-justify">
-								Вместе с нами следите за самыми важными новостями! <a href = "registration.html">Зарегистрируйтесь</a> и получите доступ к расписанию занятий, контактным данным преподавателей, форме обратной связи с ними и многое другое!
-							</p>
-							<p class = "text-justify">
-								Оставляйте отзывы, делитесь впечатлениями об учебном заведении или его сотрудниках!
-							</p>
-						</div>
-						<div class = "col-lg-4 siteBody__whoRU--teacher">
-							<h2 class = "header--second text-center">Вы преподаватель?</h2>
-							<p class = "text-justify">
-								<a href = "registration.html">Зарегистрируйтесь</a> и получите возможность дополнительной связи со своими учениками! Долой надоедливые звонки: "Здравствуйте, Семён Семёнович, а будет ли завтра пара?" и вечные просьбы выслать материал по почте.
-							</p>
-							<p class = "text-justify">
-								Выкладывайте своё расписание и контактные данные, материалы и домашнее задание, сообщайте об отмене или переносе занятия в 2 клика!
-							</p>
-						</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="userSex__radio" id="userSex__radio--male" value="Мужской">
+							Мужской
+						</label>
 					</div>
-			</div>
+				</div>
+				<div class="form-group appForm__userCountry">
+					<label for="#userCountry__userCountryDropdown">Выберите страну: </label>
+					<div class="dropdown">
+						<button id="dLabel" type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="userCountry__userCountryDropdown">
+							Выберите страну
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu userCountryDropdown__userCountryList" aria-labelledby="dLabel">
+							<li class="userCountryList__item">1</li>
+						</ul>
+					</div>
+				</div>
+				<div class="form-group appForm__userCity">
+					<label for="#userCity__userCityDropdown">Выберите город: </label>
+					<div class="dropdown">
+						<button id="dLabel" type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="userCity__userCityDropdown">
+							Выберите город
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu userCityDropdown__userCityList" aria-labelledby="dLabel">
+							<li class="userCityList__item">1</li>
+						</ul>
+					</div>
+				</div>
+				<div class="form-group appForm__passedSubjects">
+					<label for="">Выберите сданные предметы: </label>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" class="passedSubjects__itemCheckbox" value="">
+							Значение 1
+						</label>
+					</div>
+				</div>
+				<div class="form-group appForm__passedScore">
+					<label for="#passedScore__input">Введите суммарный балл за экзамены: </label>
+					<input type="text" class="form-control passedScore__input" id="passedScore__input" placeholder="XXX" required>
+				</div>
+				<div class="form-group appForm__institutionCity">
+					<label for="#institutionCity__instCityDropdown">Выберите город для университета: </label>
+					<div class="dropdown">
+						<button id="dLabel" type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="institutionCity__instCityDropdown">
+							Выберите город обучения 
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu instCityDropdown__instCityList" aria-labelledby="dLabel">
+							<li class="instCityList__item">1</li>
+						</ul>
+					</div>
+				</div>
+				<div class="form-group appForm__institution">
+					<label for="#institution__instDopdown">Выберите заведение: </label>
+					<div class="dropdown">
+						<button id="dLabel" type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="institution__instDopdown">
+							Выберите заведение
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu instDopdown__instDopdownList" aria-labelledby="dLabel">
+							<li class="instDopdownList__item"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="form-group appForm__faculty">
+					<label for="#faculty__instFacultyDropdown">Выберите факультет: </label>
+					<div class="dropdown">
+						<button id="dLabel" type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="faculty__instFacultyDropdown">
+							Выберите факультет
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu instFacultyDropdown__intsFacultyList" aria-labelledby="dLabel">
+							<li class="intsFacultyList__item"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="form-group appForm__department">
+					<label for="#department__instDepartmentDropdown">Выберите кафедру: </label>
+					<div class="dropdown">
+						<button id="dLabel" type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="department__instDepartmentDropdown">
+							Выберите кафедру
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu instDepartmentDropdown__instDepartmentList" aria-labelledby="dLabel">
+							<li class="instDepartmentList__item"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="form-group appForm__direction">
+					<label for="#direction__instDirectionDropdown">Выберите направление: </label>
+					<div class="dropdown">
+						<button id="dLabel" type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="direction__instDirectionDropdown">
+							Выберите направление
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu instDirectionDropdown__instDirectionList" aria-labelledby="dLabel">
+							<li class="instDirectionList__item"></li>
+						</ul>
+					</div>
+				</div>
+				<a type="submit" href="profile.html" class="btn btn-success appForm__sendBtn">Отправить</a>
+			</form>
 		</main>
 
 		<footer class="row siteFooter">
-			<div class = "col-md-4 siteFooter__actions">
-				<div class = "row">
-					<div class = "col-xs-12"><a href = "institutionRegistry.html">Зарегистрировать учебное заведение</a></div>
-				</div>
-			</div>
 			<div class = "col-md-3 siteFooter__info">
 				<div class = "row">
 					<div class = "col-xs-12"><a href = "FAQ.html">Часто задаваемые вопросы</a></div>
 				</div>
 			</div>
-			<div class = "col-md-5 siteFooter__contacts">
+			<div class = "col-md-5 col-md-offset-4 siteFooter__contacts">
 				Есть вопросы или предложения?<br>Обращайся: <a href = "mailto: viop.support@gmail.com" title = "Написать письмо">viop.support@gmail.com</a> или по телефону бесплатной горячей линии: 8 (800) 800-00-00
 			</div>
 		</footer>
@@ -181,5 +252,6 @@
 	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 	<script src="js/location.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script>
+	<script src="js/application.js" type="text/javascript"></script>
 </body>
 </html>

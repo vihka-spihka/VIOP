@@ -34,6 +34,7 @@ a {
 	}
 }
 
+
 #siteHeader {
 	&__location {
 		color: #9d9d9d;
@@ -90,5 +91,13 @@ a {
 .navbar {
 	&__signedIn {
 		display: none;
+		margin: 10px 10px 5px 15px;
+		display: inline-block;
+	}
+
+	& .navbar-link {
+		&:hover {
+			color: blue;
+		}
 	}
 }

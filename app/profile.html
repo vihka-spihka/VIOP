@@ -117,34 +117,77 @@
 				<div class="row content__myInfo" id="content__myInfo">
 					<div class="col-xs-12">
 						<h2 class="header--second myInfo__userFIO"><span class="myInfo__userFIO--surname">Фамилия</span> <span class="myInfo__userFIO--fName">Имя</span></h2>
-							<div class="myInfo__email">Почта: <span class="myInfo__email--adress">адрес@нечто.ру</span></div>
-							<div class="myInfo__sex">Пол: <span class="myInfo__sex--text">пол</span></div>
-							<div class="myInfo__phone">Номер телефона: <span class="myInfo__phone--text">555-55-55</span></div>
+							<div class="myInfo__role myInfo--title">Роль: <span class="myInfo__role--text myInfo--text">моя роль</span></div>
+							<div class="myInfo__description myInfo--title">Описание: <span class="myInfo__description--text myInfo--text">описание</span></div>
+							<div class="myInfo__country myInfo--title">Страна: <span class="myInfo__country--text myInfo--text">страна</span></div>
+							<div class="myInfo__city myInfo--title">Город: <span class="myInfo__city--text myInfo--text">город</span></div>
+							<div class="myInfo__email myInfo--title">Почта: <span class="myInfo__email--text myInfo--text">адрес@нечто.ру</span></div>
+							<div class="myInfo__phone myInfo--title">Номер телефона: <span class="myInfo__phone--text myInfo--text">555-55-55</span></div>
+							<div class="myInfo__matherials myInfo--title">Материалы: <span class="myInfo__matherials--text myInfo--text">материалы</span></div>
 					</div>
 				</div>
 				<div class="row content__myMsg" id="content__myMsg">
 					<div class="col-xs-12">
 						<h2 class="header--second">Мои сообщения</h2>
-							<div class="panel panel-default myMsg__msgList">
-								<div class="panel-body msgList__item">
-									переписка 1
-								</div>
-								<div class="panel-body msgList__item">
-									переписка 2
-								</div>
-								<div class="panel-body msgList__item">
-									переписка 3
-								</div>
-								<div class="panel-body msgList__item">
-									переписка 4
+						<button type="button" class="btn btn-warning myMsg__newMsgBtn" id="myMsg__newMsgBtn" data-toggle="modal" data-target="#myMsg__newMsgModal">Написать сообщение</button>
+						<!-- Modal -->
+						<div class="modal fade" id="myMsg__newMsgModal" tabindex="-1" role="dialog" aria-labelledby="newMsgModal__modalTitle">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<div class="form-group modal-title" id="newMsgModal__modalTitle">
+											<label for="modalTitle__forUser">Кому: </label>
+											<input type="text" class="form-control" id="modalTitle__forUser" placeholder="smth@gggg.com">
+										  </div>
+									</div>
+									<div class="modal-body" id="newMsgModal__modalBody">
+										<textarea class="form-control" rows="4" maxlength="1000" placeholder="Новое сообщение..." id="newMsgModal__modalBody--text"></textarea>
+									</div>
+									<div class="modal-footer" id="newMsgModal__modalFooter">
+										<button type="button" class="btn btn-info" data-dismiss="modal">Отправить</button>
+									</div>
 								</div>
 							</div>
+						</div>
+						<!-- end of modal -->
+						<div class="myMsg__msgList">
 							<div class="panel panel-default myMsg__panel">
-								<div class="panel-heading myMsg__panel--anotherUserFIO">Оппонент</div>
-								<div class="panel-body">
-									переписка
+								<div class="panel-heading myMsg__panel--anotherUserFIO">ДатаВремяОппонент</div>
+								<div class="panel-body myMsg__panel--msgText">
+									СообщениеСообщениеСообщениеСообщениеСообщениеСообщение Сообщение Сообщение Сообщение
+								</div>
+								<div class="panel-footer myMsg__panel--msgFooter text-center">
+									<button type="button" class="btn btn-link msgFooter__moreBtn" data-toggle="modal" data-target="#msgFooter__moreModal">
+										Подробнее...
+									</button>
+									<!-- Modal -->
+									<div class="modal fade" id="msgFooter__moreModal" tabindex="-1" role="dialog" aria-labelledby="moreModal__fullMsgTitle">
+									  <div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+													<h4 class="modal-title" id="moreModal__fullMsgTitle">Время, Дата, Юзер</h4>
+												</div>
+												<div class="modal-body moreModal__fullMsgBody text-justify">
+													СообщениеСообщениеСообщениеСообщениеСообщениеСообщение Сообщение Сообщение Сообщение
+												</div>
+												<div class="modal-footer moreModal__fullMsgFooter">
+													<button type="button" class="btn btn-warning fullMsgFooter__replyBtn" data-toggle="collapse" data-target="#fullMsgFooter__replyText" aria-expanded="false" aria-controls="fullMsgFooter__replyText">Написать ответ</button>
+
+													
+													<div class="collapse fullMsgFooter__replyText" id="fullMsgFooter__replyText">
+														<textarea class="form-control fullMsgFooter__replyText--text" rows="4" maxlength="1000" placeholder="Ответить..."></textarea>
+														<button type="button" class="btn btn-info fullMsgFooter__replySubmitBtn" data-dismiss="modal">Ответить</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- end of modal -->
 								</div>
 							</div>
+						</div>
 					</div>
 				</div>
 				<div class="row content__myInstitutions" id="content__myInstitutions">
@@ -153,9 +196,6 @@
 						<div class="panel panel-default myInstitutions__instList">
 							<div class="panel-body instList__item">
 								заведение 1
-							</div>
-							<div class="panel-body instList__item">
-								заведение 2
 							</div>
 						</div>
 					</div>
@@ -167,21 +207,78 @@
 							<div class="panel-body favList__item">
 								избранное 1
 							</div>
-							<div class="panel-body favList__item">
-								избранное 2
-							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row content__myApplications" id="content__myApplications">
 					<div class="col-xs-12">
 						<h2 class="header--second">Заявки</h2>
-						<div class="panel panel-default myApplications__appList">
-							<div class="panel-body appList__item">
+						<a type="button" href="application.html" class="btn btn-warning myApplications__newApp">Подать заявление</a>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary myApplications__createKeyBtn" data-toggle="modal" data-target="#myApplications">
+							Сформировать новый регистрационный ключ
+						</button>
+						<!-- Modal -->
+						<div class="modal fade" id="myApplications" tabindex="-1" role="dialog" aria-labelledby="myApplications__appTitle">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header myApplications__appHeader">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myApplications__appTitle">Создание нового регистрационного ключа</h4>
+									</div>
+									<div class="modal-body myApplications__appBody">
+										<div class="form-group">
+											<label for="appBody__dropdownApp">Выберите роль пользователя для ключа: </label>
+											<div class="dropdown" id="appBody__dropdownApp">
+												<button class="btn btn-default" id="dropdownApp__appBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<span id="dropdownApp__appBtn--text">Выберите роль </span>
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdownApp__appList" aria-labelledby="dropdownApp__appBtn">
+													<li class="appList__item">Студент</li>
+													<li class="appList__item">Преподаватель</li>
+												</ul>
+											</div>
+											<button type="button" class="btn btn-info" id="appBody__generateKeyBtn">Вперед</button>
+										</div>
+										<div class="well" id="appBody__generateResult">
+											XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+										</div>
+									</div>
+									<div class="modal-footer myApplications__appFooter">
+										<button type="button" class="btn btn-success" data-dismiss="modal">Готово</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default myApplications__appListItem">
+							<div class="panel-body appListItem__body">
 								Заявка 1
 							</div>
-							<div class="panel-body appList__item">
-								Заявка 2
+							<div class="panel-footer appListItem__footer">
+								<a type="button" class="btn btn-link appListItem__aboutBtn" data-toggle="modal" data-target="#myApplications__aboutAppModal">Подробнее..</a>
+
+								<div class="modal fade" id="myApplications__aboutAppModal" tabindex="-1" role="dialog" aria-labelledby="aboutAppModal__aboutAppTitle">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header aboutAppModal__aboutAppHeader">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												<h4 class="modal-title" id="aboutAppModal__aboutAppTitle">Заявление. Отправитель: ФИО</h4>
+											</div>
+											<div class="modal-body aboutAppModal__aboutAppBody">
+												
+											</div>
+											<div class="modal-footer aboutAppModal__aboutAppFooter">
+												<button type="button" class="btn btn-success" data-dismiss="modal">Закрыть</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+
+
 							</div>
 						</div>
 					</div>
@@ -190,20 +287,12 @@
 		</main>
 
 		<footer class="row siteFooter">
-			<div class = "col-md-4 siteFooter__actions">
-				<div class = "row">
-					<div class = "col-xs-12"><a href = "#">Зарегистрировать учебное заведение</a></div>
-				</div>
-				<div class = "row">
-					<div class = "col-xs-12"><a href = "#">Получить ключ для регистрации пользователя</a></div>
-				</div>
-			</div>
 			<div class = "col-md-3 siteFooter__info">
 				<div class = "row">
 					<div class = "col-xs-12"><a href = "FAQ.html">Часто задаваемые вопросы</a></div>
 				</div>
 			</div>
-			<div class = "col-md-5 siteFooter__contacts">
+			<div class = "col-md-5 col-md-offset-4 siteFooter__contacts">
 				Есть вопросы или предложения?<br>Обращайся: <a href = "mailto: viop.support@gmail.com" title = "Написать письмо">viop.support@gmail.com</a> или по телефону бесплатной горячей линии: 8 (800) 800-00-00
 			</div>
 		</footer>
